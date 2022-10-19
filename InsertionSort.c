@@ -8,7 +8,7 @@ void GenerateRandomArray(int *A, int length){  //genero array con numeri random 
     for(int i = 0; i <= length; i++)
         A[i] = rand();
 
-};
+}
 
 void InsertionSort(int *A, int length)
 {
@@ -27,7 +27,7 @@ void InsertionSort(int *A, int length)
         }
         A[j + 1] = key;
     }
-};
+}
   
 int SingleExperiment(int length, int max_instances) {
 
@@ -48,7 +48,7 @@ int SingleExperiment(int length, int max_instances) {
         t_tot = t_tot + t_elapsed;
     }
     return t_tot/max_instances;
-};
+}
 
 void Experiment(int min_length, int max_length) {
     int length;
